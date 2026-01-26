@@ -18,19 +18,26 @@
     <header class="header">
         <!-- <div class="container"> -->
             <nav class="navbar">
-                <a href="#!" class="brand">
-                    <div class="icon"></div>
-                    <h1 class="brand-name">The Daily Grind</h1>
-                </a>
+                <div class="brand">
+                    <a href="#!" class="brand-btn">
+                        <div class="icon"></div>
+                        <h1 class="brand-name">The Daily Grind</h1>
+                    </a>
+                </div>
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a href="#!" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#!" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#!" class="nav-link">Menu</a></li>
-                    <li class="nav-item"><a href="#!" class="nav-link">Visit</a></li>
-                    <li class="nav-item"><a href="#!" class="nav-link">Contact</a></li>
-                    <a href="#!" class="btn btn-1 order-btn">Order Online</a>
+                    <li class="nav-item"><a href="#jumbotron" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+                    <li class="nav-item"><a href="#visit" class="nav-link">Visit</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    <a href="#!" class="close-btn">
+                        <span></span><span></span>
+                    </a>
                 </ul>
-                <a href="#!" class="bar">
+                <div class="order-btn-container">
+                    <a href="#!" class="btn btn-1 order-btn">Order Online</a>
+                </div>
+                <a href="#navbar-nav" class="nav-btn">
                     <span></span><span></span><span></span>
                 </a>
             </nav>
@@ -42,7 +49,7 @@
     <main class="main">
 
         <!-- Start jumbotron -->
-        <div class="block jumbotron">
+        <div id="jumbotron" class="block jumbotron">
             <div class="container">
                 <div class="image-container">
                     <div class="image" style="background-image: url(assets/images/jumbotron-bg.jpg);"></div>
@@ -61,7 +68,7 @@
         <!-- End jumbotron -->
 
         <!-- Start about-->
-        <div class="block about">
+        <div id="about" class="block about">
             <div class="container">
                 <div class="about-title">
                     <div class="section-title">
@@ -130,7 +137,7 @@
         <!-- End about -->
 
         <!-- Start menu -->
-        <div class="block menu">
+        <div id="menu" class="block menu">
             <div class="container">
                 <div class="menu-title">
                     <div class="section-title">
@@ -240,7 +247,7 @@
         <!-- End menu -->
 
         <!-- Start visit -->
-        <div class="block visit">
+        <div id="visit" class="block visit">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6 col-lg-6">
@@ -292,7 +299,7 @@
         <!-- End visit -->
 
         <!-- Start contact -->
-        <div class="block contact">
+        <div id="contact" class="block contact">
             <div class="container">
                 <div class="card">
                     <div class="row g-xl-5 g-sm-4 g-4">
@@ -362,7 +369,10 @@
         </div>
     </footer>
     <!-- End footer -->
-
+    <script src="js/vender/jQuery-3.7.1/jquery-3.7.1.min.js"></script>
+    <script src="js/vender/gumshoe/gumshoe.polyfills.min.js"></script>
+    <script src="js/vender/smooth-scroll/smooth-scroll.polyfills.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
