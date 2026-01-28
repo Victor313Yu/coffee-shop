@@ -13,9 +13,9 @@
 }
 
 .contact .card .para, .visit .visit-info .info-item .info, .menu .menu-item .card .card-item .item-preview .item-desc, .menu .para, .about .about-item .card .para {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0.02rem;
+  letter-spacing: 0.01rem;
   color: #b9ab9d;
 }
 @media (max-width: 767px) {
@@ -789,6 +789,9 @@ a {
 .about .about-item .card .title {
   margin-top: 16px;
   transition: color 0.2s ease;
+}
+.about .about-item .card .para {
+  margin-top: 4px;
 }
 .about .about-item .card:hover {
   transform: translateY(-8px);

@@ -20,4 +20,27 @@ $(function() {
         }
     });
 
+    $('.contact-form').on('submit', function(e) {
+    e.preventDefault();
+
+    const formData = $(this).serializeArray();
+    
+    const name = $('#name').val();
+    const email = $('#email').val();
+    const message = $('#message').val();
+
+    const alertMessage = `
+        收到表單內容！
+        ------------------
+        姓名：${name}
+        信箱：${email}
+        訊息：${message}
+    `;
+
+    alert(alertMessage);
+    
+    console.log('Form data: ', formData);
+});
+    
+
 })

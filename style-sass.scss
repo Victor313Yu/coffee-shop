@@ -48,9 +48,9 @@ $white: #fefefe;
 	}
 }
 %smPara {
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 24px;
-	letter-spacing: 0.02rem;
+	letter-spacing: 0.01rem;
 	color: $textMuted;
 
 	@include rwd-md() {
@@ -770,6 +770,7 @@ a {
 			@extend %card;
 			border: 1px solid rgba($dark, 0.5);
 			transition: all 0.2s ease;
+			// height: 240px;
 
 			.icon {
 				font-size: 30px;
@@ -782,6 +783,7 @@ a {
 			}
 			.para {
 				@extend %smPara;
+				margin-top: 4px;
 			}
 
 			&:hover {
